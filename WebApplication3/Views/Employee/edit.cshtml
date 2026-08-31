@@ -1,0 +1,35 @@
+﻿@model WebApplication3.Models.Employee
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit Employee</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.HiddenFor(model => model.employeeid)
+    <div>
+        @Html.LabelFor(model => model.employeename)
+        @Html.EditorFor(model => model.employeename)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.email)
+        @Html.EditorFor(model => model.email)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.department)
+        @Html.EditorFor(model => model.department)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.salary)
+        @Html.EditorFor(model => model.salary)
+    </div>
+
+    <br />
+
+    <input type="submit" value="Save" />
+}

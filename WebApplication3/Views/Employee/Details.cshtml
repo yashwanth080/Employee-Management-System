@@ -1,0 +1,29 @@
+﻿@model WebApplication3.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Employee Details</h2>
+
+<p>
+    <strong>Employee ID:</strong> @Model.employeeid
+</p>
+
+<p>
+    <strong>Name:</strong> @Model.employeename
+</p>
+
+<p>
+    <strong>Email:</strong> @Model.email
+</p>
+
+<p>
+    <strong>Department:</strong> @Model.department
+</p>
+
+<p>
+    <strong>Salary:</strong> @Model.salary
+</p>
+
+@Html.ActionLink("Back to List", "Index")

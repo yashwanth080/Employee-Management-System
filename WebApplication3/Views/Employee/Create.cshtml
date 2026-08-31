@@ -1,0 +1,37 @@
+﻿@model WebApplication3.Models.Employee
+
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Employee</h2>
+
+@using (Html.BeginForm())
+{
+    <div>
+        @Html.LabelFor(model => model.employeeid)
+        @Html.TextBoxFor(model => model.employeeid)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.employeename)
+        @Html.TextBoxFor(model => model.employeename)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.email)
+        @Html.TextBoxFor(model => model.email)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.department)
+        @Html.TextBoxFor(model => model.department)
+    </div>
+
+    <div>
+        @Html.LabelFor(model => model.salary)
+        @Html.TextBoxFor(model => model.salary)
+    </div>
+
+    <input type="submit" value="Create" />
+}
